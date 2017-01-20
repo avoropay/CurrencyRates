@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/zend.pilipok.zp.ua/public/webstat"
+AuthUserFile /var/www/avoropay1/data/etc/3545152.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>
