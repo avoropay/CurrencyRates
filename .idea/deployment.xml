@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_CONTENT" createEmptyFolders="true" traceLevel="DETAILS">
+  <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="pilipok" createEmptyFolders="true" traceLevel="DETAILS">
     <serverData>
       <paths name="lebedev">
         <serverdata>

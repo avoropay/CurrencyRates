@@ -1,0 +1,25 @@
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">NBU Currency Rates</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table">
+                <tr>
+                    <th>Currency</th>
+                    <th>Code</th>
+                    <th>Rate</th>
+                </tr>
+                <?php foreach ($this->paginator as $rate) :  ?>
+                    <tr>
+                        <td><?= $this->escapeHtml($rate->txt) ?></td>
+                        <td><?= $this->escapeHtml($rate->cc) ?></td>
+                        <td><?= $this->escapeHtml($rate->rate) ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+
+            <p><a class="btn btn-success pull-right" href="http://framework.zend.com/" target="_blank">More Currency &raquo;</a></p>
+        </div>
+    </div>
+</div>
