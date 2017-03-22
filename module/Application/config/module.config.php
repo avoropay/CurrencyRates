@@ -51,7 +51,7 @@ return [
             ],
             [
                 'label' => 'Currency',
-                'route' => 'currency',
+                'route' => 'album',
                 'pages' => [
                     [
                         'label'  => 'Add',
@@ -69,10 +69,6 @@ return [
                         'action' => 'delete',
                     ],
                 ],
-            ],
-            [
-                'label' => 'Excange',
-                'route' => 'blog'
             ],
             [
                 'label' => 'Blog',
