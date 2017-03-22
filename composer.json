@@ -35,7 +35,7 @@
     "autoload-dev": {
         "psr-4": {
             "ApplicationTest\\": "module/Application/test/",
-            "AlbumTest\\": "module/Album/test/",
+            "CurrencyTest\\": "module/Currency/test/",
             "BlogTest\\": "module/Blog/test/"
         }
     },

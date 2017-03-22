@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="zend.pilipok.zp.ua" createEmptyFolders="true" traceLevel="DETAILS" showDifferentInSync="false">
+  <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="zend.pilipok.zp.ua" createEmptyFolders="true" traceLevel="DETAILS" uploadOnCheckin="147e1bca-ac90-48c6-aaf6-0834f6f7b8c0" showDifferentInSync="false">
     <serverData>
       <paths name="zend.pilipok.zp.ua">
         <serverdata>
@@ -10,5 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="zend.pilipok.zp.ua" />
   </component>
 </project>
