@@ -50,7 +50,7 @@ return [
                 'route' => 'home',
             ],
             [
-                'label' => 'Album',
+                'label' => 'Currency',
                 'route' => 'album',
                 'pages' => [
                     [
