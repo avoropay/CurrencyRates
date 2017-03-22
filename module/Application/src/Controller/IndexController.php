@@ -41,6 +41,12 @@ class IndexController extends AbstractActionController
             $privat1 = json_decode($response->getBody());
         }
 
+        //require ("../vendor/jpgraph/jpgraph.php");
+        /*require ("jpgraph/jpgraph_pie.php");
+        require ("../../vendor/jpgraph/jpgraph_pie3d.php");*/
+
+        //$p1 = new PiePlot3d($data);
+
         return new ViewModel(['paginator' => $currency_paginator,
                             'privat' => $privat,
                             'privat1' => $privat1

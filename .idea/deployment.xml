@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="pilipok" createEmptyFolders="true" traceLevel="DETAILS">
+  <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="zend.pilipok.zp.ua" createEmptyFolders="true" traceLevel="DETAILS" showDifferentInSync="false">
     <serverData>
-      <paths name="lebedev">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="pilipok">
+      <paths name="zend.pilipok.zp.ua">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="webamilx64">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

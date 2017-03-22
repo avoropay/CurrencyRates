@@ -28,7 +28,7 @@
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/",
-            "Album\\": "module/Album/src/",
+            "Currency\\": "module/Currency/src/",
             "Blog\\": "module/Blog/src/"
         }
     },
