@@ -9,6 +9,9 @@ class CurrencyController extends AbstractActionController
 {
     public function indexAction()
     {
+        return new ViewModel([
+            'albums' => '',
+        ]);
     }
 
     public function addAction()
