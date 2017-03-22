@@ -21,6 +21,6 @@ return [
     'Zend\Router',
     'Zend\Validator',
     'Application',
-    'Currency',
-    'Blog'
+    'Blog',
+    'Currency'
 ];
