@@ -22,6 +22,6 @@ return [
     'Zend\Validator',
     'Application',
     'Blog',
-    'Currency',
-    'ZendDeveloperTools'
+    //'Currency',
+    //'ZendDeveloperTools'
 ];

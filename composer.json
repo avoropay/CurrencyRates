@@ -28,14 +28,14 @@
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/",
-            "Currency\\": "module/Currency/src/",
+            //"Currency\\": "module/Currency/src/",
             "Blog\\": "module/Blog/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "ApplicationTest\\": "module/Application/test/",
-            "CurrencyTest\\": "module/Currency/test/",
+            //"CurrencyTest\\": "module/Currency/test/",
             "BlogTest\\": "module/Blog/test/"
         }
     },
