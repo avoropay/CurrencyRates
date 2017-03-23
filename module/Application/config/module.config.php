@@ -71,6 +71,10 @@ return [
                 ],
             ],
             [
+                'label' => 'Exchange',
+                'route' => 'blog'
+            ],
+            [
                 'label' => 'Blog',
                 'route' => 'blog'
             ]
