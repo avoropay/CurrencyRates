@@ -28,14 +28,12 @@
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/",
-            //"Currency\\": "module/Currency/src/",
             "Blog\\": "module/Blog/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "ApplicationTest\\": "module/Application/test/",
-            //"CurrencyTest\\": "module/Currency/test/",
             "BlogTest\\": "module/Blog/test/"
         }
     },
@@ -55,6 +53,7 @@
     "require-dev": {
         "zendframework/zend-test": "^3.0",
         "zendframework/zend-navigation": "^2.8",
-        "zendframework/zend-paginator": "^2.7"
+        "zendframework/zend-paginator": "^2.7",
+        "zendframework/zend-developer-tools": "^1.1"
     }
 }
