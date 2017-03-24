@@ -99,10 +99,6 @@
           <root url="file://$MODULE_DIR$/vendor/jpgraph/fonts" />
           <root url="file://$MODULE_DIR$/vendor/jpgraph/lang" />
           <root url="file://$MODULE_DIR$/vendor/jpgraph/themes" />
-          <root url="file://$MODULE_DIR$/vendor/jpgraph_/barcode" />
-          <root url="file://$MODULE_DIR$/vendor/jpgraph_/fonts" />
-          <root url="file://$MODULE_DIR$/vendor/jpgraph_/lang" />
-          <root url="file://$MODULE_DIR$/vendor/jpgraph_/themes" />
           <root url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
@@ -176,10 +172,6 @@
           <root url="file://$MODULE_DIR$/vendor/jpgraph/fonts" />
           <root url="file://$MODULE_DIR$/vendor/jpgraph/lang" />
           <root url="file://$MODULE_DIR$/vendor/jpgraph/themes" />
-          <root url="file://$MODULE_DIR$/vendor/jpgraph_/barcode" />
-          <root url="file://$MODULE_DIR$/vendor/jpgraph_/fonts" />
-          <root url="file://$MODULE_DIR$/vendor/jpgraph_/lang" />
-          <root url="file://$MODULE_DIR$/vendor/jpgraph_/themes" />
           <root url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
