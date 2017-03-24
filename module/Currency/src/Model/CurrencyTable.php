@@ -4,8 +4,13 @@ namespace Currency\Model;
 
 use RuntimeException;
 use Zend\Db\TableGateway\TableGatewayInterface;
-//use Zend\Paginator\Adapter\DbSelect;
-//use Zend\Paginator\Paginator;
+use Zend\Paginator\Adapter\DbSelect;
+use Zend\Paginator\Paginator;
+
+use Zend\Db\ResultSet\ResultSet;
+use Zend\Db\Sql\Select;
+use Zend\Db\TableGateway\TableGateway;
+
 
 class CurrencyTable
 {
@@ -19,7 +24,7 @@ class CurrencyTable
     public function fetchAll($paginated = false)
     {
         if ($paginated) {
-    //        return $this->fetchPaginatedResults();
+            return $this->fetchPaginatedResults();
         }
 
         return $this->tableGateway->select();
@@ -39,14 +44,14 @@ class CurrencyTable
         return $row;
     }
 
-    /*private function fetchPaginatedResults()
+    private function fetchPaginatedResults()
     {
         // Create a new Select object for the table:
         $select = new Select($this->tableGateway->getTable());
 
         // Create a new result set based on the Album entity:
         $resultSetPrototype = new ResultSet();
-        $resultSetPrototype->setArrayObjectPrototype(new Album());
+        $resultSetPrototype->setArrayObjectPrototype(new Currency());
 
         // Create a new pagination adapter object:
         $paginatorAdapter = new DbSelect(
@@ -60,5 +65,5 @@ class CurrencyTable
 
         $paginator = new Paginator($paginatorAdapter);
         return $paginator;
-    }*/
+    }
 }

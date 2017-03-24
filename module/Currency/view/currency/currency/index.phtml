@@ -16,6 +16,42 @@
             </div>
             <div class="panel-body">
                 <p>
+                <?php if ($this->paginator) : ?>
+                <table class="table">
+                    <tr>
+                        <th>Date</th>
+                        <th>Digital Code</th>
+                        <th>Letter Code</th>
+                        <th>Currency Name</th>
+                        <th>Rate</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                    <?php foreach ($this->paginator as $rate) : ?>
+                        <tr>
+                            <td><?= $this->escapeHtml($rate->date) ?></td>
+                            <td><?= $this->escapeHtml($rate->digital_code) ?></td>
+                            <td><?= $this->escapeHtml($rate->letter_code) ?></td>
+                            <td><?= $this->escapeHtml($rate->currency_name) ?></td>
+                            <td><?= $this->escapeHtml((float) $rate->exchange_rate / (int) $rate->number_of_units) ?></td>
+                            <td>
+                                <a href="<?= $this->url('currency', ['action' => 'edit', 'letter_code' => $rate->letter_code]) ?>">Edit</a>
+                                <a href="<?= $this->url('currency', ['action' => 'delete', 'letter_code' => $rate->letter_code]) ?>">Delete</a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </table>
+                <?= $this->paginationControl(
+                    // The paginator object:
+                    $this->paginator,
+                    // The scrolling style:
+                    'sliding',
+                    // The partial to use to render the control:
+                    'partial/paginator',
+                    // The route to link to when a user clicks a control link:
+                    ['route' => 'currency']
+                ) ?>
+
+                <?php endif; ?>
                 </p>
             </div>
         </div>

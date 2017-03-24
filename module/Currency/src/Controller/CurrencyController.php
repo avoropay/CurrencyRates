@@ -53,7 +53,7 @@ class CurrencyController extends AbstractActionController
 
 
         // Grab the paginator from the AlbumTable:
-        /*$paginator = $this->table->fetchAll(true);
+        $paginator = $this->table->fetchAll(true);
 
         // Set the current page to what has been passed in query string,
         // or to 1 if none is set, or the page is invalid:
@@ -62,12 +62,12 @@ class CurrencyController extends AbstractActionController
         $paginator->setCurrentPageNumber($page);
 
         // Set the number of items per page to 10:
-        $paginator->setItemCountPerPage(10);*/
+        $paginator->setItemCountPerPage(15);
 
 
         return new ViewModel([
                 'filegraph' => $filename,
-                //'paginator' => $paginator
+                'paginator' => $paginator
             ]
         );
     }
