@@ -11,7 +11,7 @@ class ExchangeController extends AbstractActionController
     public function indexAction()
     {
         $form = new ExchangeForm();
-        $form->get('submit')->setValue('/');
+        $form->get('submit')->setValue('Convert');
 
         $request = $this->getRequest();
 

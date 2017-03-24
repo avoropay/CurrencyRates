@@ -8,14 +8,25 @@ $this->headTitle($title);
 
 <?php
 // This provides a default CSS class and placeholder text for the title element:
-$album = $form->get('title');
+$album = $form->get('i_give');
 $album->setAttribute('class', 'form-control');
 $album->setAttribute('placeholder', 'I Give:');
 
 // This provides a default CSS class and placeholder text for the artist element:
-$artist = $form->get('artist');
+$artist = $form->get('i_want');
 $artist->setAttribute('class', 'form-control');
 $artist->setAttribute('placeholder', 'I Want:');
+
+// This provides a default CSS class and placeholder text for the title element:
+$amount_to_give = $form->get('amount_to_give');
+$amount_to_give->setAttribute('class', 'form-control');
+$amount_to_give->setAttribute('placeholder', 'How much to give');
+
+// This provides a default CSS class and placeholder text for the artist element:
+$amount_to_get = $form->get('amount_to_get');
+$amount_to_get->setAttribute('class', 'form-control');
+$amount_to_get->setAttribute('placeholder', 'How much to get');
+
 
 // This provides CSS classes for the submit button:
 $submit = $form->get('submit');
@@ -24,11 +35,11 @@ $submit->setAttribute('class', 'btn btn-primary');
 $form->setAttribute('action', $this->url('album', ['action' => 'add']));
 $form->prepare();
 
-//echo $this->form()->openTag($form);
+echo $this->form()->openTag($form);
 ?>
 <?php // Wrap the elements in divs marked as form groups, and render the
 // label, element, and errors separately within ?>
-    <!--div class="form-group">
+    <div class="form-group">
         <?= $this->formLabel($album) ?>
         <?= $this->formElement($album) ?>
         <?= $this->formElementErrors()->render($album, ['class' => 'help-block']) ?>
@@ -38,367 +49,32 @@ $form->prepare();
         <?= $this->formLabel($artist) ?>
         <?= $this->formElement($artist) ?>
         <?= $this->formElementErrors()->render($artist, ['class' => 'help-block']) ?>
-    </div -->
+    </div>
+<div class="form-group">
+	<?= $this->formLabel($amount_to_give) ?>
+	<?= $this->formElement($amount_to_give) ?>
+	<?= $this->formElementErrors()->render($amount_to_give, ['class' => 'help-block']) ?>
+</div>
+
+<div class="form-group">
+	<?= $this->formLabel($amount_to_get) ?>
+	<?= $this->formElement($amount_to_get) ?>
+	<?= $this->formElementErrors()->render($amount_to_get, ['class' => 'help-block']) ?>
+</div>
+
 
 <?php
-/*echo $this->formSubmit($submit);
+echo $this->formSubmit($submit);
 echo $this->formHidden($form->get('id'));
 echo $this->form()->closeTag();
-*/
 ?>
 
-<div class="ipsPad ipsClearfix ipsKursConverter_menu" data-role="menu">
+<!--div class="ipsPad ipsClearfix ipsKursConverter_menu" data-role="menu">
 		<div class="ipsColumns ipsColumns_noSpacing ipsSpacer_bottom">
 		    <div class="ipsColumn ipsColumn_fluid">
 				<label class="ipsFieldRow_label" for="elSelect_currencyFrom">I Give:</label>
 
 
-<select name="currency_from" class="ipsField_fullWidth ipsSpacer_bottom ipsKursConverter_menuCurrency" id="elSelect_currencyFrom">
-
-
-			<optgroup label="Popular:">
-
-					<option value="1">USD - US dollar</option>
-
-					<option value="2">EUR - euro</option>
-
-					<option value="3">RUB - russian ruble</option>
-
-					<option value="4">GBP - british pound</option>
-
-					<option value="5">CHF - swiss franc</option>
-
-					<option value="8">PLN - polish zloty</option>
-
-					<option value="7">JPY - japanese yen</option>
-
-					<option value="491" disabled="">UAH - ukrainian hryvnia</option>
-
-					<option value="6">CAD - canadian dollar</option>
-
-					<option value="9">AUD - australian dollar</option>
-
-			</optgroup>
-
-			<optgroup label="Other:">
-
-					<option value="366">ALL - albanian lek</option>
-
-					<option value="367">DZD - algerian dinar</option>
-
-					<option value="369">AOA - angolan kwanza</option>
-
-					<option value="370">ARS - argentine peso</option>
-
-					<option value="371">AMD - armenian dram</option>
-
-					<option value="372">AWG - aruban guilder</option>
-
-					<option value="365">AZN - azerbaijani manat</option>
-
-					<option value="374">BSD - bahamian dollar</option>
-
-					<option value="377">BHD - bahraini dinar</option>
-
-					<option value="375">BDT - bangladesh taka</option>
-
-					<option value="376">BBD - barbadian dollar</option>
-
-					<option value="16">BYR - belarus ruble</option>
-
-					<option value="378">BZD - belize dollar</option>
-
-					<option value="380">BMD - bermudian dollar</option>
-
-					<option value="388">BTN - bhutanese ngultrum</option>
-
-					<option value="382">BOB - bolivian boliviano</option>
-
-					<option value="384">BWP - botswana pula</option>
-
-					<option value="385">BRL - brazilian real</option>
-
-					<option value="513">IMP - british isle of man</option>
-
-					<option value="386">BND - brunei dollar</option>
-
-					<option value="381">BGN - bulgarian lev</option>
-
-					<option value="387">BIF - burundi franc</option>
-
-					<option value="418">KHR - cambodian riel</option>
-
-					<option value="415">CVE - cape verdsky escudos</option>
-
-					<option value="417">KYD - cayman islands dollar</option>
-
-					<option value="393">XAF - cfa franc</option>
-
-					<option value="379">XOF - cfa franc bceao</option>
-
-					<option value="497">CLP - chilean peso</option>
-
-					<option value="12">CNY - chinese yuan</option>
-
-					<option value="422">COP - colombian peso</option>
-
-					<option value="423">KMF - comorian franc</option>
-
-					<option value="424">CDF - congolese franc</option>
-
-					<option value="383">BAM - convertible mark</option>
-
-					<option value="427">CRC - costa rica colon</option>
-
-					<option value="496">HRK - croatian kuna</option>
-
-					<option value="505">CUC - cuban convertible peso</option>
-
-					<option value="428">CUP - cuban peso</option>
-
-					<option value="17">CZK - czech koruna</option>
-
-					<option value="13">DKK - danish krone</option>
-
-					<option value="403">DJF - djibouti franc</option>
-
-					<option value="404">DOP - dominican peso</option>
-
-					<option value="368">XCD - east caribbean dollar</option>
-
-					<option value="405">EGP - egyptian pound</option>
-
-					<option value="500">ETB - ethiopian birr</option>
-
-					<option value="495">FKP - falkland islands</option>
-
-					<option value="493">FJD - fijian dollar</option>
-
-					<option value="396">GMD - gambian dalasi</option>
-
-					<option value="10">GEL - georgian lari</option>
-
-					<option value="397">GHS - ghanaian cedi</option>
-
-					<option value="400">GIP - gibraltar pound</option>
-
-					<option value="467">STD - good sao tome and principe</option>
-
-					<option value="398">GTQ - guatemala quetzal</option>
-
-					<option value="510">GGP - guernsey pound</option>
-
-					<option value="399">GNF - guinea franc</option>
-
-					<option value="395">GYD - guyanese dollar</option>
-
-					<option value="394">HTG - haitian gourde</option>
-
-					<option value="401">HNL - honduras lempira</option>
-
-					<option value="402">HKD - hong kong dollar</option>
-
-					<option value="390">HUF - hungarian forint</option>
-
-					<option value="18">ISK - iceland krona</option>
-
-					<option value="409">INR - indian rupee</option>
-
-					<option value="410">IDR - indonesian rupiah</option>
-
-					<option value="413">IRR - iran rial</option>
-
-					<option value="412">IQD - iraqi dinar</option>
-
-					<option value="19">ILS - israeli shekel</option>
-
-					<option value="503">JMD - jamaican dollar</option>
-
-					<option value="511">JEP - jersey pound</option>
-
-					<option value="411">JOD - jordanian dinar</option>
-
-					<option value="416">KZT - kazakhstan tenge</option>
-
-					<option value="420">KES - kenyan shilling</option>
-
-					<option value="429">KWD - kuwaiti dinar</option>
-
-					<option value="421">KGS - kyrgyzstani som</option>
-
-					<option value="431">LAK - lao kip</option>
-
-					<option value="432">LVL - latvian lat</option>
-
-					<option value="435">LBP - lebanese pound</option>
-
-					<option value="433">LSL - lesotsky loti</option>
-
-					<option value="434">LRD - liberian dollar</option>
-
-					<option value="436">LYD - libyan dinar</option>
-
-					<option value="437">LTL - lithuanian lita</option>
-
-					<option value="442">MKD - macedonian denar</option>
-
-					<option value="441">MOP - makaosskaya patacas</option>
-
-					<option value="440">MGA - malagasy ariary</option>
-
-					<option value="444">MYR - malaysian ringgit</option>
-
-					<option value="445">MVR - maldivian rufiyaa</option>
-
-					<option value="439">MRO - mauritania ougulya</option>
-
-					<option value="438">MUR - mauritius rupee</option>
-
-					<option value="446">MXN - mexican peso</option>
-
-					<option value="11">MDL - moldovan leu</option>
-
-					<option value="448">MNT - mongolian tugrik</option>
-
-					<option value="407">MAD - moroccan dirham</option>
-
-					<option value="447">MZN - mozambican metical</option>
-
-					<option value="449">MMK - myanmar kyat</option>
-
-					<option value="450">NAD - namibian dollar</option>
-
-					<option value="451" selected="">NPR - nepalese rupee</option>
-
-					<option value="430">ANG - netherlands antillean guilder</option>
-
-					<option value="799">BYN - new belarus ruble</option>
-
-					<option value="460">PGK - new guinean kina</option>
-
-					<option value="487">TMT - new manat</option>
-
-					<option value="454">NZD - new zealand dollar</option>
-
-					<option value="453">NIO - nicaragua cordoba</option>
-
-					<option value="452">NGN - nigerian naira</option>
-
-					<option value="425">KPW - north korean won</option>
-
-					<option value="14">NOK - norwegian krone</option>
-
-					<option value="457">OMR - omani rial</option>
-
-					<option value="455">XPF - pacific franc</option>
-
-					<option value="458">PKR - pakistani rupee</option>
-
-					<option value="459">PAB - panama balboa</option>
-
-					<option value="461">PYG - paraguayan guarani</option>
-
-					<option value="462">PEN - peruvian nuevo sol</option>
-
-					<option value="494">PHP - philippine peso</option>
-
-					<option value="419">QAR - qatar rial</option>
-
-					<option value="464">RON - romanian leu</option>
-
-					<option value="463">RWF - rwanda franc</option>
-
-					<option value="470">SHP - saint helena pound</option>
-
-					<option value="465">SVC - salvadoran colon</option>
-
-					<option value="466">WST - samoa tala</option>
-
-					<option value="468">SAR - saudi arabian riyal</option>
-
-					<option value="514">SPL - seborgsky luigino</option>
-
-					<option value="472">RSD - serbian dinar</option>
-
-					<option value="471">SCR - seychelles rupee</option>
-
-					<option value="479">SLL - sierra leone leone</option>
-
-					<option value="473">SGD - singapore dollar</option>
-
-					<option value="798">SKK - Slovak koruna</option>
-
-					<option value="475">SBD - solomon islands dollar</option>
-
-					<option value="476">SOS - somali shilling</option>
-
-					<option value="501">ZAR - south african rand</option>
-
-					<option value="426">KRW - south korean won</option>
-
-					<option value="502">SSP - south sudanese pound</option>
-
-					<option value="508">XDR - special drawing rights ( sdrs)</option>
-
-					<option value="498">LKR - sri lanka rupee</option>
-
-					<option value="477">SDG - sudanese pound</option>
-
-					<option value="478">SRD - surinamese dollar</option>
-
-					<option value="469">SZL - swaziland lilageni</option>
-
-					<option value="15">SEK - swedish krona</option>
-
-					<option value="474">SYP - syrian pound</option>
-
-					<option value="482">TWD - taiwan dollar</option>
-
-					<option value="480">TJS - tajik somoni</option>
-
-					<option value="483">TZS - tanzanian shilling</option>
-
-					<option value="481">THB - thai baht</option>
-
-					<option value="373">AFN - the afghanistan afghani</option>
-
-					<option value="499">ERN - the eritrean nakfa</option>
-
-					<option value="484">TOP - tonga pa'ang</option>
-
-					<option value="485">TTD - trinidad and tobago dollar</option>
-
-					<option value="486">TND - tunisian dinar</option>
-
-					<option value="488">TRY - turkish lira</option>
-
-					<option value="515">TVD - tuvaliysky dollar</option>
-
-					<option value="456">AED - uae dirham</option>
-
-					<option value="489">UGX - ugandan shilling</option>
-
-					<option value="492">UYU - uruguayan peso</option>
-
-					<option value="490">UZS - uzbekistan sum</option>
-
-					<option value="389">VUV - vanuatu vatu</option>
-
-					<option value="391">VEF - venezuelan bolivar</option>
-
-					<option value="392">VND - vietnam dong</option>
-
-					<option value="414">YER - yemen riyal</option>
-
-					<option value="406">ZMK - zambian kwacha</option>
-
-					<option value="443">MWK - zambian kwacha</option>
-
-					<option value="507">ZWD - zimbabwean dollar</option>
-
-					<option value="408">ZWL - zimbabwe dollar</option>
-
-			</optgroup>
 
 			<optgroup label="Metals:">
 
@@ -869,4 +545,4 @@ echo $this->form()->closeTag();
                 <button type="submit" class="ipsButton ipsButton_primary ipsButton_fullWidth" data-role="updateDate">Select</button>
             </form>
         </div>
-	</div>
+	</div-->
