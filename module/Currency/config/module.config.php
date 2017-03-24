@@ -2,15 +2,8 @@
 namespace Currency;
 
 use Zend\Router\Http\Segment;
-use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
-    'controllers' => [
-        'factories' => [
-            Controller\CurrencyController::class => InvokableFactory::class,
-        ],
-    ],
-
     'router' => [
         'routes' => [
             'currency' => [

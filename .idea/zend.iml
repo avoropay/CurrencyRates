@@ -24,7 +24,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
@@ -40,7 +39,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-authentication" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-code" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-component-installer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-config" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-console" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-db" />
@@ -116,7 +114,6 @@
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
-          <root url="file://$MODULE_DIR$/vendor/psr/container" />
           <root url="file://$MODULE_DIR$/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
           <root url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
@@ -132,7 +129,6 @@
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-authentication" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-code" />
-          <root url="file://$MODULE_DIR$/vendor/zendframework/zend-component-installer" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-config" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-console" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-db" />
@@ -194,7 +190,6 @@
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
-          <root url="file://$MODULE_DIR$/vendor/psr/container" />
           <root url="file://$MODULE_DIR$/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
           <root url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
@@ -210,7 +205,6 @@
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-authentication" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-code" />
-          <root url="file://$MODULE_DIR$/vendor/zendframework/zend-component-installer" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-config" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-console" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-db" />
