@@ -39,6 +39,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-authentication" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-code" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-component-installer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-config" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-console" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-db" />
@@ -129,6 +130,7 @@
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-authentication" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-code" />
+          <root url="file://$MODULE_DIR$/vendor/zendframework/zend-component-installer" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-config" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-console" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-db" />
@@ -205,6 +207,7 @@
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-authentication" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-code" />
+          <root url="file://$MODULE_DIR$/vendor/zendframework/zend-component-installer" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-config" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-console" />
           <root url="file://$MODULE_DIR$/vendor/zendframework/zend-db" />

@@ -16,25 +16,6 @@
             </div>
             <div class="panel-body">
                 <p>
-                <?php if ($this->paginator) : ?>
-                <table class="table">
-                    <tr>
-                        <th>Code</th>
-                        <th>Rate</th>
-                        <th>&nbsp;</th>
-                    </tr>
-                    <?php foreach ($this->paginator as $rate) : ?>
-                        <tr>
-                            <td><?= $this->escapeHtml($rate->letter_code) ?></td>
-                            <td><?= $this->escapeHtml($rate->exchange_rate) ?></td>
-                            <td>
-                                <a href="<?= $this->url('currency', ['action' => 'edit', 'letter_code' => $rate->letter_code]) ?>">Edit</a>
-                                <a href="<?= $this->url('currency', ['action' => 'delete', 'letter_code' => $rate->letter_code]) ?>">Delete</a>
-                            </td>
-                        </tr>
-                    <?php endforeach; ?>
-                </table>
-                <?php endif; ?>
                 </p>
             </div>
         </div>
