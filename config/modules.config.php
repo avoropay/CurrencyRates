@@ -23,5 +23,7 @@ return [
     'Application',
     'Album',
     'Blog',
+    'Currency',
+    'Exchange',
     'ZendDeveloperTools'
 ];

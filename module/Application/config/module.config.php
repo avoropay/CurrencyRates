@@ -51,28 +51,28 @@ return [
             ],
             [
                 'label' => 'Currency',
-                'route' => 'album',
+                'route' => 'currency',
                 'pages' => [
                     [
                         'label'  => 'Add',
-                        'route'  => 'album',
+                        'route'  => 'currency',
                         'action' => 'add',
                     ],
                     [
                         'label'  => 'Edit',
-                        'route'  => 'album',
+                        'route'  => 'currency',
                         'action' => 'edit',
                     ],
                     [
                         'label'  => 'Delete',
-                        'route'  => 'album',
+                        'route'  => 'currency',
                         'action' => 'delete',
                     ],
                 ],
             ],
             [
                 'label' => 'Exchange',
-                'route' => 'blog'
+                'route' => 'exchange'
             ],
             [
                 'label' => 'Blog',

@@ -1,20 +1,57 @@
 <?php // content="text/plain; charset=utf-8"
-require_once ('vendor/jpgraph/jpgraph.php');
+require_once ("vendor/jpgraph/jpgraph.php");
 require_once ('vendor/jpgraph/jpgraph_line.php');
 
-// Some data
-$ydata = array(11,3,8,12,5,1,9,13,5,7);
+$theme_class=new \UniversalTheme;
 
-// Create the graph. These two calls are always required
-$graph = new Graph(350,250);
+$graph = new \Graph($graphSize[0], $graphSize[1]);
+
 $graph->SetScale('textlin');
+//$graph->SetScale('datlin');
+$graph->SetTheme($theme_class);
 
-// Create the linear plot
-$lineplot=new LinePlot($ydata);
-$lineplot->SetColor('blue');
 
-// Add the plot to the graph
+
+$graph->img->SetAntiAliasing(false);
+//$graph->title->Set('Filled Y-grid');
+$graph->SetBox(false);
+//$graph->SetMargin(40,30,40,120);
+$graph->legend->SetShadow('gray@0.4',5);
+$graph->legend->SetPos(0.1,0.1,'right','top');
+
+$graph->img->SetAntiAliasing();
+
+$graph->xaxis->SetTickSide(SIDE_BOTTOM);
+$graph->yaxis->SetTickSide(SIDE_LEFT);
+$graph->xaxis->SetLabelAngle(90);
+$graph->yaxis->HideZeroLabel();
+$graph->yaxis->HideLine(false);
+$graph->yaxis->HideTicks(false,false);
+
+$graph->xgrid->Show();
+$graph->xgrid->SetLineStyle("solid");
+$graph->xaxis->SetTickLabels($dates['USD']);
+//$graph->xaxis->SetTextLabelInterval(30);
+$graph->xaxis->SetTextTickInterval(30);
+
+$lineplot = new \LinePlot($ydata['USD']);
 $graph->Add($lineplot);
+$lineplot->SetColor('blue');
+$lineplot->SetLegend('USD');
 
-// Display the graph
-$graph->Stroke();
+$lineplotEUR = new \LinePlot($ydata['EUR']);
+$graph->Add($lineplotEUR);
+$lineplotEUR->SetColor('green');
+$lineplotEUR->SetLegend('EUR');
+
+$lineplotRUR = new \LinePlot($ydata['GBP']);
+$graph->Add($lineplotRUR);
+$lineplotRUR->SetColor('black');
+$lineplotRUR->SetLegend('GBP');
+
+
+$graph->legend->SetFrameWeight(1);
+$graph->legend->SetColumns(6);
+
+
+$graph->Stroke($filename);
