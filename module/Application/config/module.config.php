@@ -50,7 +50,7 @@ return [
                 'route' => 'home',
             ],
             [
-                'label' => 'Album',
+                'label' => 'Currency',
                 'route' => 'album',
                 'pages' => [
                     [
@@ -69,6 +69,10 @@ return [
                         'action' => 'delete',
                     ],
                 ],
+            ],
+            [
+                'label' => 'Exchange',
+                'route' => 'blog'
             ],
             [
                 'label' => 'Blog',
